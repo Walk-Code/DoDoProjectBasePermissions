@@ -26,9 +26,17 @@
             <version>8.5.31</version>
         </dependency>
         <!-- end 基础组件-web层依赖 -->
+
+        <!-- 引入jsp -->
     </dependencies>
 
     <build>
+        <resources>
+            <resource>
+                <directory>src/main/webapp/tld</directory>
+                <targetPath>META-INF</targetPath>
+            </resource>
+        </resources>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
